@@ -11,7 +11,21 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("InMem"));
+
+// Configure DbContext depending on environment
+if (builder.Environment.IsDevelopment())
+{
+    Console.WriteLine("-> Using InMemory DB (Development)");
+    builder.Services.AddDbContext<AppDbContext>(options =>
+        options.UseInMemoryDatabase("InMem"));
+}
+else
+{
+    Console.WriteLine("-> Using SQL Server (Production)");
+    builder.Services.AddDbContext<AppDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("PlatformConn")));
+}
+
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
@@ -23,7 +37,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-PrepDb.PrepPopulation(app);
+PrepDb.PrepPopulation(app, builder.Environment.IsProduction());
 
 app.UseHttpsRedirection();
 
