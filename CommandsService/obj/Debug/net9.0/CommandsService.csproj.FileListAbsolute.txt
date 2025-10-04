@@ -128,3 +128,4 @@ C:\Users\hp\onedrive\desktop\e3\CommandsService\obj\Debug\net9.0\refint\Commands
 C:\Users\hp\onedrive\desktop\e3\CommandsService\obj\Debug\net9.0\CommandsService.pdb
 C:\Users\hp\onedrive\desktop\e3\CommandsService\obj\Debug\net9.0\CommandsService.genruntimeconfig.cache
 C:\Users\hp\onedrive\desktop\e3\CommandsService\obj\Debug\net9.0\ref\CommandsService.dll
+C:\Users\hp\onedrive\desktop\e3\commandsservice\obj\Debug\net9.0\CommandsService.sourcelink.json
