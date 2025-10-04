@@ -1,2 +1,2 @@
 # platform-command-service
-A platform microservice built with C# and dotnet
+A platform microservice built with C# and dotnet.
