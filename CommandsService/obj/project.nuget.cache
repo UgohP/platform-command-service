@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JUB7/AT0vLQ=",
+  "dgSpecHash": "pSp7TieKEAA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\onedrive\\desktop\\e3\\CommandsService\\CommandsService.csproj",
+  "projectFilePath": "C:\\Users\\hp\\onedrive\\desktop\\e3\\commandsservice\\CommandsService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -15,5 +15,10 @@ namespace CommandsService.Models
         public required string Name { get; set; }
 
         public ICollection<Command> Commands { get; set; } = new List<Command>();
+
+        internal bool ExternalPlatformExist(int externalID)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
