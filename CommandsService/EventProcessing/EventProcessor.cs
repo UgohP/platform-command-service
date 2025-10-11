@@ -64,7 +64,7 @@ namespace CommandsService.EventProcessing
                     }
                     else
                     {
-                        Console.WriteLine("--< Platform Already exists");
+                        Console.WriteLine("--> Platform Already exists");
                     }
                 }
                 catch (Exception ex)
