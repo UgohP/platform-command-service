@@ -1,4 +1,4 @@
-# 🧱 .NET Microservices Architecture with gRPC, RabbitMQ, Docker & Kubernetes
+# .NET Microservices Architecture with gRPC, RabbitMQ, Docker & Kubernetes
 
 ### A Production-Ready Distributed System Built with .NET 8, gRPC, and K8s
 
@@ -12,7 +12,7 @@
 
 ## 🚀 Overview
 
-This project demonstrates a **cloud-native microservices architecture** built with **.NET 8**.  
+This project demonstrates a **cloud-native microservices architecture** built with **.NET 9**.  
 It showcases **inter-service communication**, **asynchronous messaging**, and **container orchestration** using **Docker** and **Kubernetes**.
 
 Each microservice is fully decoupled, independently deployable, and communicates via both **REST** and **gRPC**, while **RabbitMQ** handles background event processing.
